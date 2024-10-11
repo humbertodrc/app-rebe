@@ -1,0 +1,304 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.video-container {
+	background-image: url(./assets/background-productos.png);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 53vh;
+}
+
+header {
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: #1d1d1d;
+	font-weight: 700;
+	list-style-type: none;
+	margin: 20px 0;
+}
+
+nav a {
+	color: #1d1d1d;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	font-family: "Arimo", sans-serif;
+	text-transform: uppercase;
+	gap: 20px;
+}
+
+.hero {
+	background-image: url(./assets/Hero.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 648px;
+	margin-top: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	color: #ffffff;
+	font-size: 48px;
+	text-transform: uppercase;
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.boton-header {
+	color: #ffffff;
+	cursor: pointer;
+	background-color: transparent;
+	border: 4px solid #ffffff;
+	font-size: 21px;
+	font-family: "Arimo", sans-serif;
+	font-weight: 700;
+	padding: 18px 0;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	width: 220px;
+}
+
+.contenedor-header {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 0;
+	gap: 77px;
+}
+
+h2,
+h5 {
+	color: #1d1d1d;
+	font-size: 36px;
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 42px 0 16px 0px;
+	gap: 16px;
+}
+
+p {
+	color: #555555;
+	font-size: 20px;
+	font-family: "Arimo", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-align: center;
+}
+
+.contenedores {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin: 48px 0 36px 0;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+	font-size: 18px;
+	font-family: "lato", sans-serif;
+	font-weight: 300;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.video {
+	background-color: #000000;
+	height: 502px;
+	margin: 36px 0;
+}
+
+.contenedor-beneficios {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	gap: 11px;
+	margin: 48px 0 48px 0;
+}
+
+h4 {
+	color: #1d1d1d;
+	font-family: "lato", sans-serif;
+	font-weight: 800;
+}
+
+.texto {
+	color: #555555;
+	font-size: 16px;
+	width: 263px;
+	padding: 5px 47px 0 0;
+	text-align: left;
+}
+
+.contenedor-boton-azul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 70px 0;
+}
+
+.boton-azul {
+	background-color: #FF0044;
+	color: #ffffff;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 16px;
+	font-family: "Arimo", sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 18px 36px;
+}
+
+.boton-azul:hover {
+	background-color: rgba(255, 0, 68, 0.869);
+}
+
+.mapa-container {
+	background-color: #aea9a90b;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 35px 0;
+	margin: 40px 0 0 0;
+}
+
+.footer {
+	background-color: #000000;
+	border-top: 1px solid #00000037;
+	padding: 30px 0 15px 0;
+}
+
+#pagina {
+	color: #ffffff;
+	font-size: 30px;
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.listas {
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+	font-family: "Lato", sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin: 30px 0 0 0;
+	gap: 25px;
+}
+
+.redes-sociales {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+	width: 100%;
+	margin: 25px 0 61px 0;
+	gap: 30px;
+}
+
+.redes-sociales img {
+	width: 30px;
+}
+
+.derechos {
+	color: #ffffff;
+	font-size: 15px;
+}
+
+/* Productos */
+.banner {
+	background-image: url(./assets/background-productos.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.contenedor-p {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 0;
+}
+
+.pictures {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 50px;
+	margin: 0 0 50px 0;
+}
+
+footer a {
+	color: #ffffff;
+}
+
+.parrafo {
+	color: #ffffff;
+}
+
+/* Sobre Nosotros */
+.hero-2 {
+	background-image: url(./assets/unplash1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 348px;
+}
+
+.banner-2 {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 223px 0 0 140px;
+	gap: 77px;
+}
+
+.h1 {
+font-size: 48px;
+font-weight: 500;
+}
