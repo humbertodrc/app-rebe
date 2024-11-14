@@ -20,42 +20,59 @@
 <body>
 
   <header>
-    <nav>
+    <nav class="navbar">
       <div class="logo">
         <img src="./assets/logo-northstar.svg" alt="logo">
       </div>
 
-      <div>
+
+      <div class="menu-items">
+        <input type="checkbox" class="menu-toggle menu" id="menu-toggle">
+        <label for="menu-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+          width="35" 
+          height="35" 
+          fill="currentColor" 
+          class="list-icon"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+          </svg>
+        </label>
+
         <ul>
-          <a href="index.html">
-            <li>
+          <li>
+            <a href="index.html">
               Inicio
-            </li>
-          </a>
+            </a>
+          </li>
 
-          <a href="productos.html">
-            <li>Productos</li>
-          </a>
+          <li>
+            <a href="productos.html">
+              Productos
+            </a>
+          </li>
 
-          <a href="sobrenosotros.html">
-            <li>
+          <li>
+            <a href="sobrenosotros.html">
               Sobre Nosotros
-            </li>
-          </a>
+            </a>
+          </li>
 
-          <a href="contactanos.html">
-            <li>
+          <li>
+            <a href="contactanos.html">
               contactanos
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </div>
 
-      <div>
+      <div class="carrito">
         <a href="">
           <img src="./assets/customer.svg" alt="">
         </a>
       </div>
+
     </nav>
 
     <div class="hero hero-3">
