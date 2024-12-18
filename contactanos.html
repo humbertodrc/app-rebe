@@ -20,7 +20,7 @@
 <body>
 
   <header>
-    <nav class="navbar">
+    <nav class="navbar-custom">
       <div class="logo">
         <img src="./assets/logo-northstar.svg" alt="logo North Star">
       </div>
@@ -29,11 +29,7 @@
       <div class="menu-items">
         <input type="checkbox" class="menu-toggle menu" id="menu-toggle">
         <label for="menu-toggle">
-          <svg xmlns="http://www.w3.org/2000/svg" 
-          width="35" 
-          height="35" 
-          fill="currentColor" 
-          class="list-icon"
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list-icon"
             viewBox="0 0 16 16">
             <path fill-rule="evenodd"
               d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
@@ -68,9 +64,14 @@
       </div>
 
       <div class="carrito">
-        <a href="">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          id="boton-carrito">
           <img src="./assets/customer.svg" alt="carrito de compras">
-        </a>
+        </button>
+        </button>
+        <!-- <a href="">
+          <img src="./assets/customer.svg" alt="carrito de compras">
+        </a> -->
       </div>
 
     </nav>
@@ -96,25 +97,25 @@
 
 
   <section>
-    <form action="https://formspree.io/f/mjkvkazo" method="POST" target="_blank">
+    <form action="https://formspree.io/f/mjkvkazo" method="POST" id="formulario">
       <div class="input-box">
         <label>Nombre y Apellido</label>
-        <input size="30" type="text" name="nombre y apellido">
+        <input class="control" size="30" type="text" name="nombre y apellido">
       </div>
 
       <div class="input-box">
         <label>Telefono</label>
-        <input size="30" type="number" name="telefono">
+        <input class="control" size="30" type="number" name="telefono">
       </div>
 
       <div class="input-box">
         <label>Email</label>
-        <input size="30" type="email" name="email">
+        <input class="control" size="30" type="email" name="email">
       </div>
 
       <div class="input-box">
         <label>Tipo de consulta</label>
-        <select name="consultas" id="consultas">
+        <select class="control" name="consultas" id="consultas">
           <option value=""></option>
           <option value="estado de pedido">Estado de pedido</option>
           <option value="consultas">Consultas</option>
@@ -126,56 +127,57 @@
 
       <div class="input-box">
         <label>Comentario</label>
-        <textarea name="comentario" id="" rows="10" cols="40"></textarea>
+        <textarea class="control" name="comentario" id="" rows="10" cols="40"></textarea>
       </div>
 
       <div class="enviar">
-        <input class="boton-enviar" type="submit" value="Enviar">
+        <button class="boton-enviar" type="submit">Enviar</button>
       </div>
     </form>
   </section>
 
   <br><br><br>
 
-</body>
-
-<footer>
-  <section>
-    <div class="footer">
-      <div class="logo-footer">
-        <a href="index.html">
-          <img src="./assets/logo-northstar-white.svg" alt="logo North Star">
-        </a>
-      </div>
-
-      <div class="contenedor-listas">
-        <ul class="listas">
+  <footer>
+    <section>
+      <div class="footer">
+        <div class="logo-footer">
           <a href="index.html">
-            <li>
-              Inicio
-            </li>
+            <img src="./assets/logo-northstar-white.svg" alt="logo North Star">
           </a>
-          <a href="sobrenosotros.html">
-            <li>
-              Sobre Nosotros
-            </li>
-          </a>
-          <a href="contactanos.html">
-            <li>
-              Contactanos
-            </li>
-          </a>
-        </ul>
-      </div>
+        </div>
 
-      <div class="redes-sociales">
-        <a href=""><img src="./assets/instagram.svg" alt="Instagram"></a>
-        <a href=""><img src="./assets/whatsapp.svg" alt="Whatsapp"></a>
-        <a href=""><img src="./assets/pinterest-p.svg" alt="Pinterest"></a>
+        <div class="contenedor-listas">
+          <ul class="listas">
+            <a href="index.html">
+              <li>
+                Inicio
+              </li>
+            </a>
+            <a href="sobrenosotros.html">
+              <li>
+                Sobre Nosotros
+              </li>
+            </a>
+            <a href="contactanos.html">
+              <li>
+                Contactanos
+              </li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="redes-sociales">
+          <a href="index.html"><img src="./assets/instagram.svg" alt="Instagram"></a>
+          <a href="contactanos.html"><img src="./assets/whatsapp.svg" alt="Whatsapp"></a>
+          <a href="index.html"><img src="./assets/pinterest-p.svg" alt="Pinterest"></a>
+        </div>
+        <p class="derechos">Copyright © Todos los derechos reservados Desarrollado por Rebeca López.</p>
       </div>
-      <p class="derechos">Copyright © Todos los derechos reservados Desarrollado por Rebeca López.</p>
-    </div>
-  </section>
-</footer>
+    </section>
+  </footer>
+
+  <script src="./js/javascript.js"></script>
+</body>
 
 </html>

@@ -19,7 +19,7 @@
 
 <body>
   <header>
-    <nav class="navbar">
+    <nav class="navbar-custom">
       <div class="logo">
         <img src="./assets/logo-northstar.svg" alt="logo North Star">
       </div>
@@ -28,11 +28,7 @@
       <div class="menu-items">
         <input type="checkbox" class="menu-toggle menu" id="menu-toggle">
         <label for="menu-toggle">
-          <svg xmlns="http://www.w3.org/2000/svg" 
-          width="35" 
-          height="35" 
-          fill="currentColor" 
-          class="list-icon"
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list-icon"
             viewBox="0 0 16 16">
             <path fill-rule="evenodd"
               d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
@@ -67,9 +63,14 @@
       </div>
 
       <div class="carrito">
-        <a href="">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          id="boton-carrito">
           <img src="./assets/customer.svg" alt="carrito de compras">
-        </a>
+        </button>
+        </button>
+        <!-- <a href="">
+          <img src="./assets/customer.svg" alt="carrito de compras">
+        </a> -->
       </div>
 
     </nav>
@@ -181,9 +182,9 @@
       </div>
 
       <div class="redes-sociales">
-        <a href=""><img src="./assets/instagram.svg" alt="Instagram"></a>
-        <a href=""><img src="./assets/whatsapp.svg" alt="Whatsapp"></a>
-        <a href=""><img src="./assets/pinterest-p.svg" alt="Pinterest"></a>
+        <a href="index.html"><img src="./assets/instagram.svg" alt="Instagram"></a>
+        <a href="contactanos.html"><img src="./assets/whatsapp.svg" alt="Whatsapp"></a>
+        <a href="index.html"><img src="./assets/pinterest-p.svg" alt="Pinterest"></a>
       </div>
       <p class="derechos">Copyright © Todos los derechos reservados Desarrollado por Rebeca López.</p>
     </div>

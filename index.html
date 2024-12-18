@@ -20,7 +20,7 @@
 <body>
 
   <header>
-    <nav class="navbar">
+    <nav class="navbar-custom">
       <div class="logo">
         <img src="./assets/logo-northstar.svg" alt="logo North Star">
       </div>
@@ -63,24 +63,31 @@
       </div>
 
       <div class="carrito">
-        <button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          id="boton-carrito">
           <img src="./assets/customer.svg" alt="carrito de compras">
         </button>
+        </button>
+        <!-- <a href="">
+          <img src="./assets/customer.svg" alt="carrito de compras">
+        </a> -->
       </div>
 
     </nav>
 
-    <div class="home-hero">
-      <div class="contenedor-header">
 
-        <h1>Nueva Temporada</h1>
-
-        <a class="boton-header" href="productos.html">
-          Comprar ahora
-        </a>
-      </div>
-    </div>
   </header>
+
+  <div class="home-hero">
+    <div class="contenedor-header">
+
+      <h1>Nueva Temporada</h1>
+
+      <a class="boton-header" href="productos.html">
+        Comprar ahora
+      </a>
+    </div>
+  </div>
 
   <main>
     <section>
@@ -261,16 +268,16 @@
         </div>
 
         <div class="redes-sociales">
-          <a href=""><img src="./assets/instagram.svg" alt="Instagram"></a>
-          <a href=""><img src="./assets/whatsapp.svg" alt="Whatsapp"></a>
-          <a href=""><img src="./assets/pinterest-p.svg" alt="Pinterest"></a>
+          <a href="index.html"><img src="./assets/instagram.svg" alt="Instagram"></a>
+          <a href="contactanos.html"><img src="./assets/whatsapp.svg" alt="Whatsapp"></a>
+          <a href="index.html"><img src="./assets/pinterest-p.svg" alt="Pinterest"></a>
         </div>
         <p class="derechos">Copyright © Todos los derechos reservados Desarrollado por Rebeca López.</p>
       </div>
     </section>
   </footer>
 
- <script src="./js/javascript.js"></script>
+  <script src="./js/javascript.js"></script>
 </body>
 
 </html>
